@@ -19,16 +19,16 @@ CONNECTION LIMIT -1;
 https://www.postman.com/downloads/
 
 ### POST
-![](../../../Desktop/post.png)
+![post](https://user-images.githubusercontent.com/9178386/169866361-e0f2c877-dbbf-4806-a4a2-cbd220e1c489.png)
 
 ### GET
-![](../../../Desktop/get.png)
+![get](https://user-images.githubusercontent.com/9178386/169866454-dc799d6b-1182-43ad-9e81-c251f7bd242f.png)
 
 ### GET ID
-![](../../../Desktop/get id.png)
+![get id](https://user-images.githubusercontent.com/9178386/169866490-4636ad11-7e84-436d-9ade-1825a420f48d.png)
 
 ### PUT
-![](../../../Desktop/put.png)
+![put](https://user-images.githubusercontent.com/9178386/169866553-2df23cf7-c4c6-42a1-917b-8caecda26ec4.png)
 
 ### DELETE
-![](../../../Desktop/delete.png)
+![delete](https://user-images.githubusercontent.com/9178386/169866577-cc1d3ffa-d8c8-436f-8e59-cedfe4f7b8e4.png)
