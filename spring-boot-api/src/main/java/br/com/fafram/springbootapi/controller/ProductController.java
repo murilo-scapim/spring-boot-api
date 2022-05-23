@@ -15,6 +15,9 @@ import java.util.Optional;
 @RequestMapping("/api/product")
 public class ProductController {
 
+    /* delega ao Spring Boot a inicialização do objeto
+    injeção de dependência
+     */
     @Autowired
     private ProductRepository productRepository;
 
@@ -23,8 +26,11 @@ public class ProductController {
         return productRepository.findAll();
     }
 
+    /* ResponseEntity representa a response HTTP, incluindo headers,
+    body e status */
     @GetMapping("/{id}")
     public ResponseEntity<Product> findProductById(@PathVariable(value = "id") long id) {
+        // evitar exceções quando não ter valor
         Optional<Product> product = productRepository.findById(id);
         if (product.isPresent()) {
             return new ResponseEntity<Product>(product.get(), HttpStatus.OK);
@@ -38,7 +44,7 @@ public class ProductController {
         return productRepository.save(product);
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable(value = "id") long id,
                                                  @Validated @RequestBody Product newProduct) {
         Optional<Product> oldProduct = productRepository.findById(id);
@@ -53,7 +59,7 @@ public class ProductController {
         }
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<Product> deleteProduct(@PathVariable(value = "id") long id) {
         Optional<Product> product = productRepository.findById(id);
         if(product.isPresent()) {

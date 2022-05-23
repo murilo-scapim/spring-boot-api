@@ -15,3 +15,20 @@ TEMPLATE TEMPLATE0
 ENCODING 'utf-8'
 CONNECTION LIMIT -1;
 ```
+## Testando os endpoints com o Postman
+https://www.postman.com/downloads/
+
+### POST
+![](../../../Desktop/post.png)
+
+### GET
+![](../../../Desktop/get.png)
+
+### GET ID
+![](../../../Desktop/get id.png)
+
+### PUT
+![](../../../Desktop/put.png)
+
+### DELETE
+![](../../../Desktop/delete.png)
